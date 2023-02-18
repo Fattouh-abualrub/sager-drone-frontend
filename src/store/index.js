@@ -147,6 +147,8 @@ export default new Vuex.Store({
           return res.data;
         })
         .catch(error => {
+          localStorage.removeItem('token');
+          localStorage.removeItem('userInfo');
           context.commit('setLoader', false);
           return error.response.data.errors;
         });
