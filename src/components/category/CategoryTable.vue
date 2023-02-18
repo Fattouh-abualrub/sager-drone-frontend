@@ -23,7 +23,7 @@
         @on-page-number-change="pageNumberChange"
         @on-page-size-change="pageSizeChange"
         :layout="layout_table"
-        :page-size-option="[10, 50, 100, 500]"
+        :page-size-option="[10, 25, 50, 100]"
       />
     </div>
   </div>

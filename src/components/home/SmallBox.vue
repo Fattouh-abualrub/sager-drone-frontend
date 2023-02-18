@@ -1,7 +1,7 @@
 <template>
-  <div class="flex">
+  <div class="flex md:flex-row flex-col justify-center">
     <div
-      class="item h-28 w-full bg-sky-500 p-3 m-4 flex justify-between items-center rounded-lg"
+      class="item h-28 md:w-full w-10/12 bg-sky-500 p-3 my-4 md:mx-4 mx-auto flex justify-between items-center rounded-lg"
     >
       <div class="info">
         <h1 class="text-4xl text-white">{{ users }}</h1>
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div
-      class="item h-28 w-full bg-sky-700 p-3 m-4 flex justify-between items-center rounded-lg"
+      class="item h-28 md:w-full w-10/12 bg-sky-700 p-3 my-4 md:mx-4 mx-auto flex justify-between items-center rounded-lg"
     >
       <div class="info">
         <h1 class="text-4xl text-white">{{ products }}</h1>
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div
-      class="item h-28 w-full bg-sky-900 p-3 m-4 flex justify-between items-center rounded-lg"
+      class="item h-28 md:w-full w-10/12 bg-sky-900 p-3 my-4 md:mx-4 mx-auto flex justify-between items-center rounded-lg"
     >
       <div class="info">
         <h1 class="text-4xl text-white">{{ categories }}</h1>

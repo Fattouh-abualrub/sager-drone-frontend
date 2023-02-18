@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex md:flex-row flex-col justify-center">
     <div class="w-full p-2">
       <Bar v-if="loaded" id="bar" :options="chartOptions" :data="chartDataBar" />
     </div>
