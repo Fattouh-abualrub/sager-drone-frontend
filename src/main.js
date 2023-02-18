@@ -19,6 +19,7 @@ router.beforeEach((to, from, next) => {
   const loggedIn = localStorage.getItem("token");
 
   if (requiresAuth && !loggedIn) {
+    store.state.token = "";
     next("/login");
   }
   else if (!requiresAuth && loggedIn) {
